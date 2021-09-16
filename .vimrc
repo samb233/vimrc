@@ -56,7 +56,8 @@ set lazyredraw
 "
 """""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'sainnhe/edge'
+" Plug 'sainnhe/edge'
+Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
@@ -98,8 +99,8 @@ nnoremap <leader>n :NERDTreeMirror<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
 " 快速在buffer间跳转
-nmap . :bnext<CR>
-nmap , :bprevious<CR>
+nmap . :bnext!<CR>
+nmap , :bprevious!<CR>
 nmap <leader>c :bdelete<CR>
 nmap <leader>w :w<CR>
 
@@ -127,11 +128,11 @@ syntax enable
 syntax on
 
 " 配色方案设置 
-let g:edge_style = 'default'
-let g:edge_enable_italic = 1
-colorscheme edge 
-set background=light
-let g:airline_theme='edge'
+" set background=light
+let g:sonokai_style = 'default'
+let g:sonokai_enable_italic = 1
+colorscheme sonokai 
+let g:airline_theme='sonokai'
 
 " vim-airline设置 
 let g:airline_powerline_fonts = 1
