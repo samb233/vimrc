@@ -56,9 +56,8 @@ set lazyredraw
 "
 """""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-" Plug 'sainnhe/edge'
 Plug 'sainnhe/sonokai'
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
@@ -77,7 +76,7 @@ call plug#end()
 "
 """""""""""""""""""""""""""""""""""""""""""
 " tab操作多tab
-nmap tn :tabnew
+nmap tn :tabnew<CR>
 nmap <Tab> :tabnext<CR>
 nmap <S-Tab> :tabprevious<CR>
 
@@ -132,12 +131,7 @@ syntax on
 let g:sonokai_style = 'default'
 let g:sonokai_enable_italic = 1
 colorscheme sonokai 
-let g:airline_theme='sonokai'
 
-" vim-airline设置 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1      "tabline中当前buffer两端的分隔字符
-" let g:airline#extensions#tabline#left_sep = ' '   "tabline中未激活buffer两端的分隔字符
-" let g:airline#extensions#tabline#left_alt_sep = '|'      
-" let g:airline#extensions#tabline#buffer_nr_show = 1      "tabline中buffer显示编号
-let g:airline#extensions#tabline#fnamemod = ':t'    
+" lightline设置
+set laststatus=2
+let g:lightline = {'colorscheme' : 'sonokai'}
