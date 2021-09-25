@@ -15,6 +15,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+" set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""
 "
@@ -56,7 +57,8 @@ set lazyredraw
 "
 """""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'sainnhe/sonokai'
+Plug 'ayu-theme/ayu-vim'
+" Plug 'sainnhe/sonokai'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
@@ -98,10 +100,10 @@ nnoremap <leader>n :NERDTreeMirror<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
 " 快速在buffer间跳转
-nmap . :bnext!<CR>
-nmap , :bprevious!<CR>
-nmap <leader>c :bdelete<CR>
-nmap <leader>w :w<CR>
+" 感觉用不到，待删除
+" nmap . :bnext!<CR>
+" nmap , :bprevious!<CR>
+" nmap <leader>c :bdelete<CR>
 
 "  vim-go 设定
 nmap gr :GoRun 
@@ -127,11 +129,19 @@ syntax enable
 syntax on
 
 " 配色方案设置 
-" set background=light
-let g:sonokai_style = 'default'
-let g:sonokai_enable_italic = 1
-colorscheme sonokai 
+"
+" 使用ayu配色
+let ayucolor="light"
+colorscheme ayu
 
-" lightline设置
 set laststatus=2
-let g:lightline = {'colorscheme' : 'sonokai'}
+let g:lightline = {'colorscheme' : 'ayu'}
+
+
+" 使用sonokai配色
+" let g:sonokai_style = 'default'
+" let g:sonokai_enable_italic = 1
+" colorscheme sonokai 
+
+" set laststatus=2
+" let g:lightline = {'colorscheme' : 'sonokai'}
