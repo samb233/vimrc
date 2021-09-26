@@ -57,10 +57,12 @@ set lazyredraw
 "
 """""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'sainnhe/edge'
-Plug 'sainnhe/sonokai'
+Plug 'ayu-theme/ayu-vim'
+" Plug 'sainnhe/sonokai'
 Plug 'itchyny/lightline.vim'
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -103,7 +105,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " 感觉用不到，待删除
 " nmap . :bnext!<CR>
 " nmap , :bprevious!<CR>
-nmap <leader>c :bdelete<CR>
+" nmap <leader>c :bdelete<CR>
 
 "  vim-go 设定
 nmap gr :GoRun 
@@ -130,12 +132,12 @@ syntax on
 
 " 配色方案设置 
 "
-" 使用edge亮色
-set background=light
-colorscheme edge 
+" 使用ayu配色
+let ayucolor="light"
+colorscheme ayu
 
 set laststatus=2
-let g:lightline = {'colorscheme' : 'edge'}
+let g:lightline = {'colorscheme' : 'ayu'}
 
 
 " 使用sonokai配色
