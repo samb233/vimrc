@@ -15,7 +15,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" set mouse=a
+set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""
 "
@@ -59,6 +59,7 @@ set lazyredraw
 call plug#begin('~/.vim/plugged')
 Plug 'ayu-theme/ayu-vim'
 " Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/everforest'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
@@ -136,14 +137,43 @@ syntax on
 let ayucolor="light"
 colorscheme ayu
 
-set laststatus=2
-let g:lightline = {'colorscheme' : 'ayu'}
-
-
 " 使用sonokai配色
 " let g:sonokai_style = 'default'
 " let g:sonokai_enable_italic = 1
 " colorscheme sonokai 
 
-" set laststatus=2
-" let g:lightline = {'colorscheme' : 'sonokai'}
+set laststatus=2
+" lightline 设置显示当前文件夹名
+let g:lightline = {
+      \ 'colorscheme': 'ayu',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'inactive': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'component_function': {
+      \   'filename': 'LightlineTruncatedFileName'
+      \ }
+      \ }
+
+function! LightlineTruncatedFileName()
+let l:filePath = expand('%')
+    if winwidth(0) > 100
+        return l:filePath
+    else
+        return pathshorten(l:filePath)
+    endif
+endfunction
+
+
+
+
