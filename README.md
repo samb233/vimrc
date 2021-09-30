@@ -8,11 +8,17 @@ This version is not recommended to be used
 ## 文件目录
 
 ├── basic.vim							基础设定
+
 ├── extension.vim					插件设定
+
 ├── filetype.vim						文件分类型设定
+
 ├── interface.vim					 界面设定
+
 ├── install_vim_plug.sh		   安装vim-plug脚本
+
 └── .vimrc								  调用的.vimrc
+
 
 ## 借鉴
 
