@@ -18,6 +18,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'mg979/vim-visual-multi'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " nerdtree设定
@@ -45,7 +46,7 @@ let g:lightline = {
       \ 'colorscheme': 'sonokai',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified' ] ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
@@ -56,6 +57,12 @@ let g:lightline = {
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'component': {
+      \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
       \ },
       \ 'component_function': {
       \   'filename': 'LightlineTruncatedFileName'
@@ -70,3 +77,5 @@ let l:filePath = expand('%')
         return pathshorten(l:filePath)
     endif
 endfunction
+
+
