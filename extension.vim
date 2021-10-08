@@ -17,7 +17,6 @@ Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/bufexplorer.zip'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mg979/vim-visual-multi'
 call plug#end()
 
@@ -38,10 +37,6 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 nmap <leader>o :BufExplorer<cr>
-
-" indent-guide 设定
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
 
 " lightline设定
 set laststatus=2
