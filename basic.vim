@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""
 "
-"      basic 
+"      基础设定 
 "
 """""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -26,15 +26,13 @@ filetype indent on
 
 
 """""""""""""""""""""""""""""""""""""""""""
-"
 "      快捷键设置 
-"
 """""""""""""""""""""""""""""""""""""""""""
 " 设置Y复制到系统剪贴板
 vnoremap Y "+y
 
 " leader键设定
-let mapleader=","
+let mapleader="\<space>"
 nmap <leader>w :w<CR>
 
 " tab操作
@@ -42,6 +40,7 @@ nmap <leader>tn :tabnew<CR>
 nmap <leader>to :tabonly<CR>
 nmap <leader>tc :tabclose<CR>
 nmap <leader>tm :tabmove
+nmap <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
 
 nmap <Tab> :tabnext<CR>
 nmap <S-Tab> :tabprevious<CR>
@@ -60,7 +59,13 @@ nmap <leader>cp :cp<CR>
 nmap <leader>bd :bdelete<CR>
 nmap <leader>ba :1,1000 bd!<CR>
 
-" 防止vim运行太卡
+
+" 进入到buffer的文件夹
+" map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""
+"      防止vim运行太卡 
+"""""""""""""""""""""""""""""""""""""""""""
 let g:matchparen_timeout = 20
 let g:matchparen_insert_timeout = 20
 set nocursorcolumn
