@@ -18,7 +18,7 @@ set expandtab
 set autoindent
 
 " 鼠标设置
-set mouse=a
+" set mouse=a
 
 " 开启文件识别
 filetype plugin on
