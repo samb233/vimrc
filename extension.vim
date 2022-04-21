@@ -11,11 +11,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
-Plug 'jayli/vim-easycomplete'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-fugitive'
@@ -27,10 +23,10 @@ nmap <leader>n :NERDTreeToggle<CR>
 " nmap <leader>nf :NERDTreeFind<CR>
 
 " vim-go 设定
-au filetype go nmap <leader>gr :GoRun 
-au filetype go nmap <leader>gt :GoTest
-au filetype go nmap <leader>gm :GoMetaLinter
-au filetype go nmap <leader>gi :GoInfo<CR>
+" au filetype go nmap <leader>gr :GoRun 
+" au filetype go nmap <leader>gt :GoTest
+" au filetype go nmap <leader>gm :GoMetaLinter
+" au filetype go nmap <leader>gi :GoInfo<CR>
 
 " bufexplorer设定
 let g:bufExplorerDefaultHelp=0
