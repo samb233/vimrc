@@ -11,12 +11,10 @@ require("plugins")
 require("colorscheme")
 
 -- 插件配置
-require("plugin.nvim-tree")
-require("plugin.bufferline")
-require("plugin.catppuccin")
-require("plugin.lualine")
-require("plugin.telescope")
-require("plugin.nvim-treesitter")
-require("plugin.nvim-autopairs")
-
+require("plugin-settings.nvim-tree")
+require("plugin-settings.catppuccin")
+require("plugin-settings.telescope")
+require("plugin-settings.nvim-autopairs")
+require("plugin-settings.lualine")
+require("plugin-settings.bufferline")
 require('Comment').setup()

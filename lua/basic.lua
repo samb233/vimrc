@@ -1,6 +1,6 @@
 -- utf8
 vim.g.encoding = "UTF-8"
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "UTF-8"
 
 -- jkhl 移动光标时保留8行
 vim.o.scrolloff = 8
@@ -10,7 +10,7 @@ vim.o.sidescrolloff = 8
 vim.wo.number = true
 
 -- 相对行号
--- vim.wo.relativenumber = true
+vim.wo.relativenumber = true
 
 -- 高亮所在行
 vim.wo.cursorline = true
@@ -48,7 +48,7 @@ vim.o.smartcase = true
 -- vim.o.hlsearch = false
 
 -- 边输入边搜索
--- vim.o.incsearch = true
+vim.o.incsearch = true
 
 -- 当文件被外部文件修改时，自动加载
 vim.o.autoread = true
@@ -61,7 +61,7 @@ vim.wo.wrap = false
 vim.o.whichwrap = '<,>,[,]'
 
 -- 允许隐藏被修改过的buffer
-vim.o.hidden = true
+-- vim.o.hidden = true
 
 -- 鼠标支持
 -- vim.o.mouse = "a"
@@ -82,7 +82,7 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 
 -- 自动补全不自动选中
-vim.g.completeopt = "menu,menuone,noselect,noinsert"
+-- vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- 样式
 vim.o.background = "dark"
@@ -103,8 +103,8 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 
 -- 永远显示 tabline
-vim.o.showtabline = 2
+-- vim.o.showtabline = 2
 
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
-vim.o.showmode = false
+-- vim.o.showmode = false
 

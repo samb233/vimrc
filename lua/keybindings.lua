@@ -55,12 +55,32 @@ map("n", "<C-k>", "4k", opt)
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 
+-- Tab操作
+-- map("n", "<S-Tab>", ":tabnext<CR>", opt)
+-- map("n", "<Tab>", ":tabprevious<CR>", opt)
+-- map("n", "<leader>tn", ":tabnew<CR>", opt)
+-- map("n", "<leader>to", ":tabonly<CR>", opt)
+-- map("n", "<leader>tc", ":tabclose<CR>", opt)
+-- map("n", "<leader>tm", ":tabmove<CR>", opt)
+
+-- buffer操作
+map("n", "<leader>bd", ":Bdelete!<CR>", opt)
+map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<Tab>", ":BufferLineCycleNext<CR>", opt)
+
+map("n", "<leader>fb", ":Telescope buffers<CR>", opt)
+-- Telescope
+-- 查找文件
+map("n", "<leader>ff", ":Telescope find_files<CR>", opt)
+-- 全局搜索
+map("n", "<leader>fg", ":Telescope live_grep<CR>", opt)
+
+-- nvim-tree
+map("n", "<leader>n", ":NvimTreeToggle<CR>", opt)
+
 -- 插件快捷键
 local pluginKeys = {}
 
--- nvim-tree
--- alt + m 键打开关闭tree
-map("n", "<leader>n", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
   -- 打开文件或文件夹
@@ -100,22 +120,5 @@ pluginKeys.telescopeList = {
       ["<C-d>"] = "preview_scrolling_down",
     },
   }
-
--- bufferline
--- 左右Tab切换
-map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<Tab>", ":BufferLineCycleNext<CR>", opt)
--- 关闭
---"moll/vim-bbye"
-map("n", "<leader>bd", ":Bdelete!<CR>", opt)
--- map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
--- map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
--- map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
-
--- Telescope
--- 查找文件
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
--- 全局搜索
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 
 return pluginKeys

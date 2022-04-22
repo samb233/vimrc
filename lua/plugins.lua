@@ -1,42 +1,30 @@
 local packer = require("packer")
 packer.startup({
   function(use)
-    -- Packer 可以管理自己本身
+    -- Packer
     use 'wbthomason/packer.nvim'
-    -- 你的插件列表...
-
-    -- 主题
-    use({ "catppuccin/nvim", as = "catppuccin" })
 
     -- nvim-tree
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
 
-    -- bufferline
-    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
+    -- telescope
+    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+
+    -- comment
+    use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
+
+    -- autopairs
+    use 'windwp/nvim-autopairs'
+
+    -- 主题
+    use({ "catppuccin/nvim", as = "catppuccin" })
 
     -- lualine
     use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
     use("arkav/lualine-lsp-progress")
 
-    -- telescope
-    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
-
-    -- treesitter
-    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-
-    -- comment
-    use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-}
-
-    -- autopairs
-    use 'windwp/nvim-autopairs'
-
-    -- lspconfig
-    -- use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
+    -- bufferline
+    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
 
   end,
   config = {
