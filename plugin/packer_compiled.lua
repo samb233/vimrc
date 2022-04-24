@@ -75,6 +75,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
     url = "https://hub.fastgit.xyz/numToStr/Comment.nvim"
   },
+  ["ayu-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ayu-nvim",
+    url = "https://hub.fastgit.xyz/CantoroMC/ayu-nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
@@ -84,6 +89,36 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
     url = "https://hub.fastgit.xyz/catppuccin/nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://hub.fastgit.xyz/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://hub.fastgit.xyz/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://hub.fastgit.xyz/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://hub.fastgit.xyz/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    url = "https://hub.fastgit.xyz/hrsh7th/cmp-vsnip"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://hub.fastgit.xyz/rafamadriz/friendly-snippets"
   },
   ["lualine-lsp-progress"] = {
     loaded = true,
@@ -99,6 +134,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
     url = "https://hub.fastgit.xyz/windwp/nvim-autopairs"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://hub.fastgit.xyz/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    url = "https://hub.fastgit.xyz/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://hub.fastgit.xyz/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -129,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://hub.fastgit.xyz/moll/vim-bbye"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://hub.fastgit.xyz/hrsh7th/vim-vsnip"
   }
 }
 

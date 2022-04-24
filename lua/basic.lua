@@ -64,7 +64,7 @@ vim.o.whichwrap = '<,>,[,]'
 -- vim.o.hidden = true
 
 -- 鼠标支持
--- vim.o.mouse = "a"
+vim.o.mouse = "a"
 
 -- 禁止创建备份文件
 --vim.o.backup = false
@@ -90,8 +90,9 @@ vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.list = true
+-- vim.o.list = true
 vim.o.listchars = "space:·"
+-- vim.o.listchars = "tab:····"
 
 -- 补全增强
 vim.o.wildmenu = true

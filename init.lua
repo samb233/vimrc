@@ -17,4 +17,15 @@ require("plugin-settings.telescope")
 require("plugin-settings.nvim-autopairs")
 require("plugin-settings.lualine")
 require("plugin-settings.bufferline")
+require("plugin-settings.indent-blankline")
 require('Comment').setup()
+
+
+-- 内置LSP (新增)
+require("lsp.setup")
+
+-- cmp补全
+require("lsp.cmp")
+
+require("lsp.ui")
+require("lsp.null-ls")
