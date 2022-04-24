@@ -120,6 +120,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://hub.fastgit.xyz/rafamadriz/friendly-snippets"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    url = "https://hub.fastgit.xyz/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    url = "https://hub.fastgit.xyz/onsails/lspkind-nvim"
+  },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine-lsp-progress",
@@ -129,6 +139,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://hub.fastgit.xyz/nvim-lualine/lualine.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
+    url = "https://hub.fastgit.xyz/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
