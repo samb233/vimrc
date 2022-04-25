@@ -28,8 +28,8 @@ vim.o.softtabstop = 4
 vim.o.shiftround = true
 
 -- >> << 时移动长度
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
+vim.o.shiftwidth = 4
+vim.bo.shiftwidth = 4
 
 -- 空格代替tab
 vim.o.expandtab = true
@@ -61,7 +61,7 @@ vim.wo.wrap = false
 vim.o.whichwrap = "<,>,[,]"
 
 -- 允许隐藏被修改过的buffer
--- vim.o.hidden = true
+vim.o.hidden = true
 
 -- 系统剪贴板支持
 vim.o.clipboard = "unnamedplus"
@@ -85,7 +85,7 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 
 -- 自动补全不自动选中
--- vim.g.completeopt = "menu,menuone,noselect,noinsert"
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- 样式
 vim.o.background = "dark"

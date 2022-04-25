@@ -25,6 +25,7 @@ packer.startup({
 
 		-- 主题
 		use({ "catppuccin/nvim", as = "catppuccin" })
+		-- use("xiyaowong/nvim-transparent")
 
 		-- lualine
 		use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })

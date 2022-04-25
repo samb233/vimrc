@@ -75,11 +75,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
     url = "https://hub.fastgit.xyz/numToStr/Comment.nvim"
   },
-  ["ayu-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ayu-nvim",
-    url = "https://hub.fastgit.xyz/CantoroMC/ayu-nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
@@ -130,6 +125,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
     url = "https://hub.fastgit.xyz/onsails/lspkind-nvim"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
+    url = "https://hub.fastgit.xyz/tami5/lspsaga.nvim"
+  },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine-lsp-progress",
@@ -169,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://hub.fastgit.xyz/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\Samb\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://hub.fastgit.xyz/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
